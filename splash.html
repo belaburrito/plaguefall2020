@@ -1,24 +1,21 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>PLAGUE CONSPIRACY</title>
-  </head>
-
+    <script src="script.js"></script>
   <style>
   body{
     background-color:black;
-    background-image: url('circle.gif');
-    background-size: 20%;
+    /*kground-image: url('https://i.pinimg.com/originals/aa/c2/d7/aac2d76e3ec47f928d6bf0f0c7070f31.png');*/
+    background-size: 100% 100%;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   p{
-    font-family: 'Special Elite', cursive;
-    color: yellow;
-    font-weight: bolder;
-    font-size: 2em;
+    font-family: 'VT323', monospace;
+    color: black;
+    font-size: 1em;
+    text-align:center;
   }
   div.a{
     margin: auto;
@@ -34,17 +31,65 @@
   }
   img{
     display:block;
-    margin:auto;
-    margin-top:10%;
-    width:20%;
+    margin: auto;
   }
+
+  button{
+    font-family: 'VT323', monospace;
+    font-weight: lighter;
+    background: black;
+    border-radius: 3px;
+    border: none;
+    padding: 15px;
+    font-size: 2em;
+    color: snow;
+    transition:.3s;
+  }
+  button:hover{
+    background:grey;
+  }
+
+  .content{
+    width:370px;
+    height:250px;
+    margin: 40px auto;
+    padding: 30px;
+    background: snow;
+    color: grey;
+    border-radius: 6px;
+    box-shadow: 3px 6px 15px white;
+  }
+
+  a{
+    color: magenta;
+  }
+
+  a:hover{
+    font-style: italic;
+  }
+
+  header{
+    margin-top: 20px;
+  }
+
   </style>
+</head>
+
 
   <body>
-    <p>CLICK HERE</p>
+    <header>
+    <img src="glitch.gif" width="300px" height="auto"; style="margin-bottom: -20px;">
+    <img src="conspiracy.gif" style="margin-bottom: 30px;">
+    <p class="btn"><button type="button" id="truth" onclick="ninjaVanish()">Learn The Truth</button></p>
 
-    <p>TO FIND OUT WHAT THEY DON'T WANT YOU TO KNOW</p>
+  </header>
 
+
+
+    <div class="content" id="menu">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id convallis dolor, eu aliquet augue. Donec fermentum tristique urna ac porta. Cras euismod egestas lacus, sed elementum nulla condimentum vitae. Curabitur in feugiat erat. Donec tincidunt arcu eget lorem bibendum, ac convallis justo ultrices. Aliquam tincidunt feugiat ante, nec imperdiet quam facilisis eget. Phasellus iaculis accumsan sapien, eget elementum libero hendrerit in. Morbi fermentum sit amet tellus eget accumsan. Cras ante nibh, scelerisque id fringilla quis, fermentum nec lorem. Phasellus velit arcu, feugiat quis lectus non, commodo dignissim nisi. Etiam vel risus malesuada, rhoncus elit sit amet, efficitur mauris. Ut molestie metus rhoncus dapibus commodo.</p>
+      <p><a href="index.html">Enter here.</a></p>
+    </div>
   </body>
 
 </html>
