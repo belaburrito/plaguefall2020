@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:wght@700&display=swap');
+
+@font-face{
+  font-family: "Chomsky";
+  src: url("Chomsky.woff") format("woff");
+}
+body{
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+main{
+  margin: 150px;
+  margin-top: 20px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+header{
+  border-bottom: 1px solid lightgrey;
+  height: 40px;
+}
+
+a, a:active, a:visited{
+  color: black;
+  text-decoration: underline;
+}
+a:hover{
+  color: grey;
+  text-decoration: underline;
+}
+
+h1{
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Chomsky";
+  font-weight: lighter;
+}
+
+h1 a, a:active, a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+
+
+p{
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  border-bottom: 2.5px solid black;
+  margin-bottom: 50px;
+}
+
+h3{
+  font-size: 1.3em;
+}
+
+h3:hover{
+  text-decoration: underline;
+}
+
+h4{
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+}
+
+h5{
+  font-weight: 300;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+}
+
+article.first {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+#content1{
+  width: 300px;
+  margin: 80px 80px 80px 0px;
+}
+
+#content2{
+  margin-left: 10px;
+}
+
+#content2 > p{
+  font-size: 1.4em;
+}
+
+#paltrow{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#paltrow img{
+  align-self: center;
+}
+
+
+.imgwrapper{
+  width: auto;
+  height: auto;
+  color: grey;
+  font-size: 0.7em;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.a {grid-area: a;}
+.b {grid-area: b;}
+.c {grid-area: c;}
+.d {grid-area: d;}
+.e {grid-area: e;}
+
+.gridwrapper {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: 10px;
+  row-gap: 1em;
+  grid-template-areas:
+  'a b c'
+  'd e .';
+}
+
+.gridwrapper2 {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: 10px;
+  row-gap: 1em;
+  grid-template-areas:
+  'a b'
+  'c d'
+  'e .';
+}
+
+.blinditem{
+  display: flex;
+}
+
+.blinditem img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.blindcontent{
+  background-color: yellow;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+ul{
+  justify-content: center;
+  display:flex;
+  list-style-type: none;
+  font-size: 0.7em;
+  color: grey;
+}
+
+li{
+  margin-right: 10px;
+}
