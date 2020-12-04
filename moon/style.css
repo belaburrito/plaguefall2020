@@ -1,0 +1,61 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-color: black;
+  color: red;
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.parallax{
+  background-image: url('moon.png'), url('jfk.png');
+  background-size: auto;
+    /* Set a specific height */
+  height: 1200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center top -250px, bottom right;
+  background-repeat: no-repeat;
+  /*
+  background-image: url('jfk.png');
+  background-size: 414px 522px;
+    /* Set a specific height */
+  /*height: 1000px;
+
+  /* Create the parallax scrolling effect */
+  /*background-attachment: fixed;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  */
+}
+
+#jfk img {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+#moon img {
+  z-index: 1;
+  position: relative;
+  top: -200px;
+}
+
+#cheesemoon img{
+  z-index: 1;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 10%;
+}
+
+.page1{
+  height: 1000px;
+  background-color: red;
+  color: black;
+}
