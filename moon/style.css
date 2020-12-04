@@ -16,14 +16,14 @@ html{
   height: 100%;
 }
 .parallax{
-  background-image: url('moon.png'), url('jfk.png');
+  background-image: url('jfk.png'), url('moon.png');
   background-size: auto;
     /* Set a specific height */
   height: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center top -250px, bottom right;
+  background-position: bottom right, center top -250px;
   background-repeat: no-repeat;
   /*
   background-image: url('jfk.png');
@@ -60,13 +60,13 @@ html{
 }
 
 .page1{
-  height: 120%;
+  height: auto;
   background-color: red;
   color: black;
 }
 
 .wrapper{
-  display:block;
+  display: block;
   margin: auto;
   padding-top: 10px;
   width: 40%;
@@ -74,6 +74,7 @@ html{
   background-color: white;
   padding-left: 10px;
   padding-right: 10px;
+  overflow: visible;
 }
 .page1 h1{
   font-family: 'Russo One', sans-serif;
@@ -93,4 +94,23 @@ html{
 .page2 {
   height: 1000px;
   background-color: black;
+}
+
+@media only screen and (max-width: 50em){
+  .parallax{
+    background-image: url('moonmobile.png'),
+    url('jfkflipped.png');
+    background-size: cover, auto;
+      /* Set a specific height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: center right -200px, bottom left -100px;
+    background-repeat: no-repeat;
+  }
+
+  .wrapper{
+      width: 50%;
+  }
 }
