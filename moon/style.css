@@ -65,7 +65,7 @@ html{
   color: black;
 }
 
-.wrapper{
+#page1wrapper{
   /*display: block;
   margin: auto;
   padding-top: 10px;
@@ -290,7 +290,7 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 50em){
-  .parallax{
+  #parallax{
     background-image: url('moonmobile.png'), url('jfkflipped.png');
     background-size: cover, auto;
       /* Set a specific height */
@@ -302,7 +302,7 @@ footer a:hover{
     background-repeat: no-repeat;
   }
 
-  .wrapper{
+  #page1wrapper{
       width: 50%;
   }
 
