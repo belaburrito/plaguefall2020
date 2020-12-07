@@ -84,6 +84,9 @@ html{
   overflow: visible;
   padding-bottom: 10px;
   padding-left: 10px;
+
+  border-left: 5px solid darkred;
+  border-right: 4px solid darkred;
 }
 
 #page1flex{
@@ -139,7 +142,6 @@ hr{
   margin-right: 15px;
   padding-left: 10px;
   border-left: 2px solid white;
-
 }
 
 #page2 p, h1{
@@ -172,6 +174,7 @@ hr{
 #page3flex{
   display: flex;
   align-items: top;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -182,8 +185,11 @@ hr{
 #page3flex img{
   object-fit: contain;
   width: 10%;
-  margin: -20px;
-  height: auto;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  align-self: flex-start;
 }
 
 
@@ -199,6 +205,7 @@ hr{
   font-size: 1.3em;
   margin: 20px;
   padding: 20px;
+  border: 3px solid darkred;
 }
 
 #pointmoon h1, p{
@@ -207,11 +214,6 @@ hr{
 
 #pointearth h1, p{
   text-align: left;
-}
-
-#moonpic img{
-  width: 50%;
-  height: auto;
 }
 
 #page4{
@@ -304,5 +306,38 @@ footer a:hover{
       width: 50%;
   }
 
+  #page2wrapper{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-right: 10px;
+    border-left: none;
 
+  }
+
+  #page2wrapper p, #page2wrapper h1{
+    background-color: rgba(221, 221, 221, .5);
+  }
+
+
+
+  #page3flex{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pointmoon, #pointearth{
+    width: 60%;
+  }
+
+  #page3flex img{
+    display: none;
+  }
+
+  #page2wrapper{
+  }
 }
