@@ -3,93 +3,46 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>PLAGUE CONSPIRACY</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  <style>
-  body{
-    background-color:black;
-    /*kground-image: url('https://i.pinimg.com/originals/aa/c2/d7/aac2d76e3ec47f928d6bf0f0c7070f31.png');*/
-    background-size: 100% 100%;
-    background-attachment: fixed;
-  }
-  p{
-    font-family: 'VT323', monospace;
-    color: black;
-    font-size: 1em;
-    text-align:center;
-  }
-  div.a{
-    margin: auto;
-    padding-top: 70px;
-    padding-left: 50px;
-    width:400px;
-    height:400px;
-  }
-  div.b{
-    width:400px;
-    height:400px;
-    margin: auto;
-  }
-  img{
-    display:block;
-    margin: auto;
-  }
-
-  button{
-    font-family: 'VT323', monospace;
-    font-weight: lighter;
-    background: black;
-    border-radius: 3px;
-    border: none;
-    padding: 15px;
-    font-size: 2em;
-    color: snow;
-    transition:.3s;
-  }
-  button:hover{
-    background:grey;
-  }
-
-  .content{
-    width:370px;
-    height:250px;
-    margin: 40px auto;
-    padding: 30px;
-    background: snow;
-    color: grey;
-    border-radius: 6px;
-    box-shadow: 3px 6px 15px white;
-  }
-
-  a{
-    color: magenta;
-  }
-
-  a:hover{
-    font-style: italic;
-  }
-
-  header{
-    margin-top: 20px;
-  }
-
-  </style>
-</head>
+  </head>
 
 
   <body>
     <header>
-    <img src="glitch.gif" width="300px" height="auto"; style="margin-bottom: -20px;">
-    <img src="conspiracy.gif" style="margin-bottom: 30px;">
-    <p class="btn"><button type="button" id="truth" onclick="ninjaVanish()">Learn The Truth</button></p>
-
-  </header>
+      <h1><a href="https://www.plaguemagazine.com">PLAGUE MAGAZINE</a></H1>
 
 
+      <video autoplay loop muted>
+        <source src="birds.mov" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
 
-    <div class="content" id="menu">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id convallis dolor, eu aliquet augue. Donec fermentum tristique urna ac porta. Cras euismod egestas lacus, sed elementum nulla condimentum vitae. Curabitur in feugiat erat. Donec tincidunt arcu eget lorem bibendum, ac convallis justo ultrices. Aliquam tincidunt feugiat ante, nec imperdiet quam facilisis eget. Phasellus iaculis accumsan sapien, eget elementum libero hendrerit in. Morbi fermentum sit amet tellus eget accumsan. Cras ante nibh, scelerisque id fringilla quis, fermentum nec lorem. Phasellus velit arcu, feugiat quis lectus non, commodo dignissim nisi. Etiam vel risus malesuada, rhoncus elit sit amet, efficitur mauris. Ut molestie metus rhoncus dapibus commodo.</p>
-      <p><a href="index.html">Enter here.</a></p>
-    </div>
+      <h1 id="edition">CONSPIRACY EDITION</h1>
+
+
+
+    <p>
+    Plague Magazine's fall 2020 issue is nigh. Are you ready to learn the truth? Sign up for email notifications when the official website is released.
+    </p>
+
+    <!--temporary-->
+
+    <p>
+      <a href="moon/moon.html">Click here for a preview.</a>
+    </p>
+
+
+
+    <form
+      action="https://formspree.io/f/mnqogjqp"
+      method="POST"
+    >
+      <input type="email" name="emailnotify">
+      <input type="submit" value="Send">
+    </form>
+
+    </header>
   </body>
 
 </html>
