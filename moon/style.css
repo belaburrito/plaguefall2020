@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap');
+
+@font-face {
+  font-family: "Russo One";
+  src: url('RussoOne-Regular.ttf') format('truetype');
+}
 
 *{
   margin:0;
@@ -15,6 +20,47 @@ body{
 html{
   height: 100%;
 }
+/*
+#menu{
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.75em;
+  color: white;
+  background-color: Transparent;
+  border: none;
+  font-weight: bolder;
+}
+
+#menubig{
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  left: 50px;
+  background-color: white;
+  z-index: 99;
+}*/
+
+
+#btn{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  border: none;
+  background-color: Transparent;
+  color: white;
+  font-weight: bolder;
+  position: fixed;
+  bottom: -30px;
+  right: 5px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 15px;
+  transition: color 1s;
+}
+
+#btn:hover{
+  color: darkred;
+}
+
+
 #parallax{
   background-image: url('jfk.png'), url('moon.png');
   background-size: auto;
@@ -118,7 +164,7 @@ hr{
 }
 
 #page2{
-  background-image: url('flatearth2.png');
+  background-image: url('flatearth.png');
   background-size: auto;
     /* Set a specific height */
   height: 150%;
@@ -176,23 +222,16 @@ hr{
   align-items: top;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-right: 30px;
 }
 
 #page3flex:first-child{
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
-#page3flex img{
-  object-fit: contain;
-  width: 10%;
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-top: 50%;
-  margin-bottom: 50%;
-  align-self: flex-start;
+#page3img {
+    align-self: center;
 }
-
-
 
 #pointmoon, #pointearth{
   background-color: white;
@@ -240,7 +279,12 @@ hr{
   padding-bottom: 50px;
 }
 
-.nav{
+#page4wrapper img{
+  width: 80%;
+  height: auto;
+}
+
+#nav{
   position: fixed;
   width: 50px;
   top: 0;
@@ -249,18 +293,23 @@ hr{
   z-index: 1;
   overflow-x: hidden;
   border-right: 2px solid white;
+  transition: width 2s;
 }
 
-.nav a, a:visited, a:active{
+#nav:hover{
+  width: 100px;
+}
+
+#nav a, a:visited, a:active{
   text-decoration: none;
   color: white;
 }
 
-.nav a:hover{
+#nav a:hover{
   text-decoration: line-through;
 }
 
-.nav h1{
+#nav h1{
   writing-mode: vertical-lr;
   transform:rotate(180deg);
   color: white;
@@ -270,6 +319,35 @@ hr{
   margin-bottom: 10px;
   position: absolute;
   bottom: 20px;
+}
+
+#bignav {
+  writing-mode: vertical-lr;
+  transform:rotate(180deg);
+  position: fixed;
+  bottom: 20px;
+  left: 55px;
+  color: black;
+  display: flex;
+  z-index: 99;
+}
+
+#bignav div{
+  color: black;
+  background-color: white;
+  margin: 5px;
+  padding-left: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 99;
+}
+
+#bignav a, #bignav a:visited, #bignav a:active{
+  color: black;
+}
+
+#bignav a:hover{
+  color: grey;
 }
 
 footer, footer a{
@@ -338,6 +416,4 @@ footer a:hover{
     display: none;
   }
 
-  #page2wrapper{
-  }
 }

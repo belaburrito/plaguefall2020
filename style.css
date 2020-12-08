@@ -47,6 +47,7 @@ h1, h1 a, h1 a:visited, h1 a:active{
   color: yellow;
   text-decoration: none;
   background-color: black;
+  text-align: center;
 }
 
 h1 a:hover{
@@ -68,4 +69,14 @@ input[type=submit]{
   padding: 2px;
   background-color: yellow;
   color: black;
+}
+
+@media only screen and (max-width: 50em){
+  #content{
+    width: 80%;
+  }
+
+  video{
+    width: 80%;
+  }
 }

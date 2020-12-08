@@ -10,14 +10,26 @@
   </head>
 
   <body>
-    <div class="nav"><h1><a href="../home/index.html">Plague Magazine: Conspiracy Edition</a></h1></div>
-    <div id="parallax"></div>
+
+    <button id="btn" title="Back to top">^</button>
+
+    <div id="nav"><h1><a href="#parallax">Plague Magazine: Conspiracy Edition</a></h1></div>
+    <div id="bignav">
+      <div id="link1"><a href="#page1">Love Planet</a></div>
+      <div id="link2"><a href="#page2">Di Eart</a></div>
+      <div id="link3"><a href="#page3">Point/Counterpoint</a></div>
+      <div id="link4"><a href="#page4">Beautiful Poem</a></div>
+      <div id="link4"><a href="../home/index.html">Home</a></div>
+    </div>
+
+    <script src="script.js"></script>
+    <a name="parallax"><div id="parallax"></div></a>
 
 
      <div id="page1">
        <div id="page1flex">
        <div id="page1wrapper">
-       <h1>Love Planet</h1>
+       <h1><a name="#page1">Love Planet</a></h1>
        <hr></hr>
        <p>After only a single season on air, this morning ABC announced that it would be cancelling their Love Island spinoff, Love Planet, after low ratings, budgetary concerns, and logistical challenges plagued the first reality dating show to take place on the moon.</p>
 
@@ -39,7 +51,7 @@
 
     <div id="page2">
       <div id="page2wrapper">
-      <h1>Composition of the Earth</h1>
+      <h1><a name="#page2">Composition of the Earth</a></h1>
       <hr></hr>
       <p>Previously, scientists believed that the earth was 70% water, but actually that was a typo in an old textbook that slipped through the cracks. In reality, our water is 70% earth, making the oceans and seas a dense mud, rather than salt water. The discovery of this typo led to mass water shortages, not to mention the decline of all sailing and water sport activities.</p>
       </div>
@@ -49,7 +61,7 @@
     <div id="page3">
         <div id="page3flex">
           <div id="pointmoon">
-            <h1>POINT: MOON</h1>
+            <h1><a name="#page3">POINT: MOON</a></h1>
             <hr></hr>
                     <p>Gather round people,<br>
                       Hear my merry hum<br>
@@ -91,7 +103,12 @@
             <p></p>
           </div>
 
-          <img src="pointer.png">
+          <div id="page3img">
+            <img srcset="pointer.png, pointer2x.png 2x"
+              width="300"
+              height="305"
+              alt="Pointer fingers going in left and right directions" >
+          </div>
 
           <div id="pointearth">
             <h1>COUNTERPOINT: EARTH</h1>
@@ -127,9 +144,12 @@
     <div id="page4">
 
       <div id="page4wrapper">
-      <h1>Poor Baby Earth</h1>
+      <h1><a name="#page4">Poor Baby Earth</a></h1>
       <hr></hr>
-      <img src="earthpoem.png" width="80%" height="auto">
+      <img srcset="earthpoem.png, earthpoem2x.png 2x"
+        width="800"
+        height="600"
+        alt="The Earth is green. Humans are mean. The Earth is dying and no one is trying to save her. They cut her trees and kill her bees. She is covered in shit. The forests are lit just to reveal the gender.">
       </div>
     </div>
 
@@ -141,4 +161,4 @@
   </footer>
 
 
-  </html>
+</html>
