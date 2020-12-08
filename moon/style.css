@@ -41,6 +41,7 @@ html{
 
 
 #btn{
+  display: none;
   font-family: 'Oswald', sans-serif;
   font-size: 3em;
   border: none;
@@ -367,21 +368,94 @@ footer a:hover{
   text-decoration: line-through;
 }
 
+#moontext{
+  display: none;
+  z-index: 1;
+  color: blue;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 3em;
+  width: 60%;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  text-align: right;
+}
+
+#mobilenav{
+  position: fixed;
+  z-index: 1;
+  font-size: 1em;
+  display: none;
+}
+
+#mobilenav div {
+  color: black;
+}
+
 @media only screen and (max-width: 50em){
   #parallax{
-    background-image: url('moonmobile.png'), url('jfkflipped.png');
+    background-image: url('moonmobile2.png'), url('jfkflipped.png');
     background-size: cover, auto;
       /* Set a specific height */
     height: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: scroll;
-    background-position: center right -200px, bottom left -100px;
+    background-position: left top -200px, bottom left -100px;
     background-repeat: no-repeat;
   }
 
+  #moontext{
+    display: block;
+  }
+
+  #nav, #nav h1{
+    z-index: 1;
+    writing-mode: horizontal-tb;
+    transform:rotate(180deg);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+
+  #nav:hover{
+    width: 100%;
+    transition: unset;
+  }
+
+  #bignav{
+    display: none;
+  }
+
+  #bignav div{
+    display: none;
+  }
+
+  #mobilenav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1px;
+  }
+
+  #mobilenav div, #mobilenav div a{
+    flex:1 1 auto;
+    text-align: center;
+    margin: 5px;
+    background-color: white;
+    color: black;
+  }
+
   #page1wrapper{
-      width: 50%;
+      width: 80%;
+  }
+
+  #page2{
+    background-attachment: unset;
   }
 
   #page2wrapper{
@@ -409,11 +483,25 @@ footer a:hover{
   }
 
   #pointmoon, #pointearth{
-    width: 60%;
+    width: 75%;
+  }
+
+  #page3flex{
+    padding: unset;
+    margin: unset;
+  }
+
+  #page3flex:first-child{
+    margin: unset;
   }
 
   #page3flex img{
     display: none;
   }
+
+  #page4wrapper{
+    width: 100%;
+  }
+
 
 }
