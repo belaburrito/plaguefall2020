@@ -4,45 +4,47 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>PLAGUE CONSPIRACY</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
   </head>
 
 
   <body>
-    <header>
+    <main>
       <h1><a href="https://www.plaguemagazine.com">PLAGUE MAGAZINE</a></H1>
 
 
       <video autoplay loop muted>
+        <!-- Animation by Camilla Johnson -->
         <source src="birds.mov" type="video/mp4">
           Your browser does not support the video tag.
       </video>
 
-      <h1 id="edition">CONSPIRACY EDITION</h1>
 
 
+      <div id="content">
+        <h1 id="edition">CONSPIRACY EDITION</h1>
+        <p>
+        Plague Magazine's fall 2020 issue is nigh. Are you ready to learn the truth? Sign up for email notifications when the official website is released.
+        </p>
 
-    <p>
-    Plague Magazine's fall 2020 issue is nigh. Are you ready to learn the truth? Sign up for email notifications when the official website is released.
-    </p>
+        <!--temporary-->
 
-    <!--temporary-->
-
-    <p>
-      <a href="moon/moon.html">Click here for a preview.</a>
-    </p>
+        <p>
+          <a href="moon/moon.html">Click here for a preview.</a>
+        </p>
 
 
-
-    <form
-      action="https://formspree.io/f/mnqogjqp"
-      method="POST"
-    >
-      <input type="email" name="emailnotify">
-      <input type="submit" value="Send">
-    </form>
-
-    </header>
+        <div id="form">
+          <form
+            action="https://formspree.io/f/mnqogjqp"
+            method="POST"
+          >
+            <input type="email" name="emailnotify">
+            <input type="submit" value="Send">
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
-
+<script src="script.js"></script>
 </html>

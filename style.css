@@ -5,11 +5,10 @@
 video{
   width: 50%;
   height: auto;
+  padding: 10px;
 }
 body{
-  background-color:black;
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background-color: black;
 }
 p{
   font-family: 'VT323', monospace;
@@ -17,15 +16,26 @@ p{
   font-size: 1em;
   text-align:center;
   text-decoration: none;
+  width: 95%;
 }
 p a, p a:visited, p a:active{
   color: yellow;
 }
-header{
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#content{
+  background-color: black;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 #edition{
   color: yellow;
@@ -36,6 +46,7 @@ h1, h1 a, h1 a:visited, h1 a:active{
   font-family: 'VT323', monospace;
   color: yellow;
   text-decoration: none;
+  background-color: black;
 }
 
 h1 a:hover{
