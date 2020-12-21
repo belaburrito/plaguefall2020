@@ -188,10 +188,11 @@ article.big > p{
 .imgwrapperbig {
   width: auto;
   height: auto;
-  margin-left: 20px;
+
 }
 
 .imgwrapperbig > img{
+  margin-top: 10px;
   width: 500px;
 }
 
@@ -236,7 +237,7 @@ article img{
 
 
 .gridwrapper{
-  margin-top: 40px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2em;
@@ -307,6 +308,19 @@ li{
   margin-bottom: 5px;
 }
 
+.gridwrapper article {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+.columnbox img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
 @media only screen and (min-width: 50em){
 
   #content1{
@@ -324,6 +338,7 @@ li{
 
   .gridwrapper article {
     border-right: 1px solid lightgrey;
+    border-bottom: none;
   }
 
   .gridwrapper article:nth-child(3n+3){
@@ -366,6 +381,11 @@ li{
     margin-left: 10px;
     width: 200px;
     height: 132px;
+    border-bottom: none;
+  }
+
+  .imgwrapperbig {
+    margin-left: 20px;
   }
 
 
