@@ -242,6 +242,10 @@ article img{
   gap: 2em;
 }
 
+.gridwrapper img {
+
+}
+
 .gridwrapper article{
   margin-bottom: 40px;
   padding-right: 20px;
@@ -249,7 +253,7 @@ article img{
 
 .gridwrapper article > img {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 /*
 .gridwrapper {
