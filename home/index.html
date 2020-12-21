@@ -65,61 +65,133 @@ send feedback to plague dot magazine at gmail dot com
     <meta property="og:description" content="NYU's only intentionally funny publication.">
     <meta property="og:image" content="./meta_image.jpg">
     <meta property="og:url" content="http://www.plaguemag.com/">
+
+    <style>
+
+      .container{
+        display: flex;
+        flex-direction: row;
+      }
+
+      .mobile {
+        display: none;
+      }
+
+      @media only screen and (max-width: 50em){
+        h1{
+          text-align: center;
+        }
+
+        .nav{
+          justify-content: center;
+        }
+
+        .btn{
+          background-color: orange;
+          width: 100%;
+        }
+
+        .mobile {
+          display: flex;
+        }
+
+        .desktop {
+          display: none;
+        }
+
+        .container{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .nav{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #foreword, #contributors{
+          display: none;
+        }
+
+      }
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("h2").click(function(){
+          $(this).next().toggle();
+        });
+      });
+    </script>
+
     </head>
+
+
 
     <body>
       <header>
-      <h1>The Plague: Conspiracy Edition</h1>
+      <div class="desktop"><h1>The Plague: Conspiracy Edition</h1></div>
 
 
       </header>
 
       <main>
-        <div class="nav">
-          <img src="leglamp.gif" usemap="#image-map" style="float:left;">
+        <div class="container">
+          <nav>
+            <div id="lamp"><img src="leglamp.gif" class="desktop" usemap="#image-map"></div>
+            <div id="lamp"><img src="lampheader.gif" class="mobile"></div>
 
-          <map name="image-map">
-              <area target="" alt="index.html" title="Home" href="index.html" coords="173,59,262,98" shape="rect">
-              <area target="" alt="cork.html" title="Corkboard" href="cork.html" coords="197,132,294,164" shape="rect">
-              <area target="" alt="https://www.crouton.net/" title="Crouton" href="https://www.crouton.net/" coords="187,195,277,231" shape="rect">
-          </map>
-        </div>
-        <div class="intro">
+            <map name="image-map">
+                <area target="_blank" alt="Plague Mag" title="Plague Mag" href="http://plaguemag.com/" coords="148,39,274,89" shape="rect">
+                <area target="_blank" alt="Hollyweird" title="Hollyweird" href="../nyt/obits.html" coords="161,116,287,166" shape="rect">
+                <area target="_blank" alt="The Moon" title="The Moon" href="../moon/moon.html" coords="158,198,281,251" shape="rect">
+            </map>
+          </nav>
+          <div class="intro">
           <h2>Foreword</h2>
-          <p>Some call us NYU's only intentionally funny comedy magazine, some call us a collection of grifters, we call ourselves the only accurate source of world news. After months of painstaking research, collecting archival documents and spitting into strangers’ mouths, we are proud to present our <b>CONSPIRACY EDITION</b>.<br>
-          <br>Click around for some lost writings, real actual images (NOT FAKE), the truth about the moon, facts about the various secret societies you hear about and the effects of a perfectly ascetic life. If you know where my dog is, please email plaguemagazine@gmail.com.<br></p>
+              <section id="foreword">
+              <p>Some call us NYU's only intentionally funny comedy magazine, some call us a collection of grifters, we call ourselves the only accurate source of world news. After months of painstaking research, collecting archival documents and spitting into strangers’ mouths, we are proud to present our <b>CONSPIRACY EDITION</b>.<br>
+              <br>Click around for some lost writings, real actual images (NOT FAKE), the truth about the moon, facts about the various secret societies you hear about and the effects of a perfectly ascetic life. If you know where my dog is, please email plaguemagazine@gmail.com.<br></p>
 
-          <p style="font-size: 9.5px"><br>In all sincerity, this is our first fully web designed issue and the sexiest <i>Plague</i> thus far. It would not have been possible without the amazing work of <i>Plague</i> contributors, editors, and friends. Thanks to anyone who has dropped into a meeting, emailed us rudely, offered services that we do not care for and submitted pieces of work ranging from “cringe” to “poggers." Without your efforts, this would’ve been a trainwreck.<br></p>
+              <p>In all sincerity, this is our first fully web designed issue and the sexiest <i>Plague</i> thus far. It would not have been possible without the amazing work of <i>Plague</i> contributors, editors, and friends. Thanks to anyone who has dropped into a meeting, emailed us rudely, offered services that we do not care for and submitted pieces of work ranging from “cringe” to “poggers." Without your efforts, this would’ve been a trainwreck.</p>
 
-          <p><i>Plague</i> wishes you luck on your journey.</p>
 
-          <h2>Contributors</h2>
-          <p><b>Head Editor</b><br>Anna “Ketchup and Marshmallow Lunch Truther” Galperin<br>
-            <br><b>Web Wizard and Big Hand Man</b><br> Bela “Daniel Radcliffe/ Elijah Wood Industrial Complex Truther” Kochkarova<br>
-            <br><b>Editors</b> <br>Bela “Daniel Radcliffe/ Elijah Wood Industrial Complex Truther” Kochkarova<br>
-            Alex “<i>Daddy’s Home 2</i> Truther” Gehrlein<br>
-            Rebecca “Jewish American Princess and Japanese Defamation League Truther” Kaufman<br>
-            <br><b>All the work, none of the credit</b><br>
-            Beth “Beth Truther” Truther "Crawford" Crawford<br>
-            Harry “Massivejuultits Truther” Minsky<br>
-            Duncan "Frank Sinatra Mafia Truther" Lamont<br>
-            Connor “Vape Nation Replaced Atlantis Truther” DeLeon<br>
-            Camilla “Mr. Bean is a Member of The Deep State Truther” Johnson<br>
-            Arnav "Monster Trucks are Sentient Truther” Nayak<br>
-            Jack “My Dad is Tom Hanks Truther” Gordon<br>
-            Abby "Dogs are a Type of Baby Truther" Roll<br>
-            Borb “Gorb Trorb” Orb<br>
-            melon "Discord is for the Horny Truther" lord<br>
-            Amber "Barefoot is Illegal Truther" Li <br>
-            Nick "Webtoon Is Literature Truther" Ankuta<br>
-            Victor "<i>Gossip Girl</i> is Real Truther" Kuang<br>
-            Louis "Chucky Cheese is Chester Cheeto's Dad Truther" Cutter<br>
-            Kate "13 is the New 30 Truther" Flannigan<br>
-            <br><b>Special Thanks</b><br>
-            Addison Knies, Doron Rasis, Tony Schwab, Joshua Jones, Elie Doctor, D.J. DJN, Q, Nanci Healy, COVID-19, Jeffery Bezo’s, Norm Mcdonald, Chris Moltisani
-            </p>
+              <p><i>Plague</i> wishes you luck on your journey.</p>
+              </section>
+
+            <h2>Contributors</h2>
+            <section id="contributors">
+            <p><b>Head Editor</b><br>Anna “Ketchup and Marshmallow Lunch Truther” Galperin<br>
+              <br><b>Web Wizard and Big Hand Man</b><br> Bela “Daniel Radcliffe/ Elijah Wood Industrial Complex Truther” Kochkarova<br>
+              <br><b>Editors</b> <br>Bela “Daniel Radcliffe/ Elijah Wood Industrial Complex Truther” Kochkarova<br>
+              Alex “<i>Daddy’s Home 2</i> Truther” Gehrlein<br>
+              Rebecca “Jewish American Princess and Japanese Defamation League Truther” Kaufman<br>
+              <br><b>All the work, none of the credit</b><br>
+              Beth “Beth Truther” Truther "Crawford" Crawford<br>
+              Harry “Massivejuultits Truther” Minsky<br>
+              Duncan "Frank Sinatra Mafia Truther" Lamont<br>
+              Connor “Vape Nation Replaced Atlantis Truther” DeLeon<br>
+              Camilla “Mr. Bean is a Member of The Deep State Truther” Johnson<br>
+              Arnav "Monster Trucks are Sentient Truther” Nayak<br>
+              Jack “My Dad is Tom Hanks Truther” Gordon<br>
+              Abby "Dogs are a Type of Baby Truther" Roll<br>
+              Borb “Gorb Trorb” Orb<br>
+              melon "Discord is for the Horny Truther" lord<br>
+              Amber "Barefoot is Illegal Truther" Li <br>
+              Nick "Webtoon Is Literature Truther" Ankuta<br>
+              Victor "<i>Gossip Girl</i> is Real Truther" Kuang<br>
+              Louis "Chucky Cheese is Chester Cheeto's Dad Truther" Cutter<br>
+              Kate "13 is the New 30 Truther" Flannigan<br>
+              <br><b>Special Thanks</b><br>
+              Addison Knies, Doron Rasis, Tony Schwab, Joshua Jones, Elie Doctor, D.J. DJN, Q, Nanci Healy, COVID-19, Jeffery Bezo’s, Norm Mcdonald, Chris Moltisani
+              </p>
+            </section>
+          </div>
         </div>
-
       </main>
     </body>
 
