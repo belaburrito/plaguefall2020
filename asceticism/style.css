@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+  padding: 0
+  margin: 0;
+}
+
+@font-face{
+  font-family: "Catharsis";
+  src: url('Catharsis.ttf');
+}
+
+body{
+  background-image: url('concrete.png');
+  background-size: cover;
+  background-color: white;
+  font-family: "Helvetica", sans-serif;
+}
+
+h1{
+  font-family: 'Catharsis', sans-serif;
+  font-size: 3em;
+}
+
+p{
+  font-family: 'Playfair Display', serif;
+}
+
+img{
+  display: block;
+}
+
+.flexbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pic{
+  position: relative;
+  left: 15%;
+}
+
+.pic img{
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+.container img{
+  width: 90%;
+  height: auto;
+}
+
+.txt{
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  text-align: center;
+  width: 60%;
+  height: 70%;
+  overflow-y: scroll;
+  padding-right: 10px;
+
+}
+
+.txt > p{
+  line-height: 1.5em;
+}
+
+footer {
+  margin-bottom: 30px;
+  font-size: 0.8em;
+  color: brown;
+  text-align: center;
+}
+
+footer a, footer a:active, footer a:visited{
+  color: brown;
+}
+
+hr{
+  margin-top: 20px;
+  background-color: brown;
+}
+
+.txt::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.txt::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.txt::-webkit-scrollbar-thumb {
+  background-color: #ad8539;
+  outline: 1px solid slategrey;
+}
