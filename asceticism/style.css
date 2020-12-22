@@ -41,9 +41,6 @@ img{
   left: 15%;
 }
 
-.pic img{
-}
-
 .container{
   position: relative;
   display: flex;
@@ -81,6 +78,11 @@ footer {
 
 footer a, footer a:active, footer a:visited{
   color: brown;
+}
+
+footer a:hover{
+  color: black;
+  transition: color 1s;
 }
 
 hr{
