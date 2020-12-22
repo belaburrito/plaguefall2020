@@ -15,6 +15,7 @@ send feedback to plague dot magazine at gmail dot com
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta charset="UTF-8">
+    <link rel"stylesheet" href="style.css">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="comedy, nyu, humor magazine, bad photoshop, 1970s, student media, new york city">
     <meta name="description" content="NYU's only intentionally funny publication.">
@@ -66,71 +67,7 @@ send feedback to plague dot magazine at gmail dot com
     <meta property="og:image" content="./meta_image.jpg">
     <meta property="og:url" content="http://www.plaguemag.com/">
 
-    <style>
 
-      .container{
-        display: flex;
-        flex-direction: row;
-      }
-
-      .mobile {
-        display: none;
-      }
-
-      nav{
-        margin-right: 10px;
-      }
-
-      @media only screen and (max-width: 50em){
-        h1{
-          text-align: center;
-        }
-
-        .nav{
-          justify-content: center;
-        }
-
-        .btn{
-          background-color: orange;
-          width: 100%;
-        }
-
-        .mobile {
-          display: flex;
-        }
-
-        .desktop {
-          display: none;
-        }
-
-        .container{
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .nav{
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        #foreword, #contributors{
-          display: none;
-        }
-
-      }
-
-    </style>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $("h2").click(function(){
-          $(this).next().toggle();
-        });
-      });
-    </script>
 
     </head>
 
@@ -146,15 +83,30 @@ send feedback to plague dot magazine at gmail dot com
       <main>
         <div class="container">
           <nav>
-            <div id="lamp"><img src="leglamp.gif" class="desktop" usemap="#image-map"></div>
-            <div id="lamp"><img src="lampheader.gif" class="mobile"></div>
+            <div id="lamp"><a href="index.html"><img src="leglamp.gif" class="desktop" usemap="#image-map"></a></div>
+            <div id="lamp"><a href="index.html"><img src="lampheader.gif" class="mobile"></a></div>
 
             <map name="image-map">
                 <area target="_blank" alt="Plague Mag" title="Plague Mag" href="http://plaguemag.com/" coords="148,39,274,89" shape="rect">
                 <area target="_blank" alt="Hollyweird" title="Hollyweird" href="../nyt/obits.html" coords="161,116,287,166" shape="rect">
                 <area target="_blank" alt="The Moon" title="The Moon" href="../moon/moon.html" coords="158,198,281,251" shape="rect">
             </map>
+
+
           </nav>
+          <div class="mobilenav">
+            <ul>
+              <li><a href="http://www.plaguemagazine.com/">Home</a></li>
+              <li><a href="nyt/obits.html">Hollyweird</a></li>
+              <li><a href="moon/moon.html">The Moon</a></li>
+              <li><a href="asceticism/index.html">Spirituality</a></li>
+              <li><a href="secrets/index.html">Secret Societies</a></li>
+              <li><a href="lost/index.html">Lost Writings</a></li>
+              <li><a href="twl/index.html">Things We Lost</a></li>
+              <li><a href="quizzes/index.html">Quizzes</a></li>
+              <li><a href="corkboard/index.html">Corkboard</a></li>
+
+          </div>
           <div class="intro">
           <h2>Foreword</h2>
               <section id="foreword">

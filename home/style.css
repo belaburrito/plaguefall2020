@@ -1,25 +1,77 @@
-p, ul, li, h2{
-  font-family: Arial, sans-serif;
-  color: white;
-}
-
-main{
-  display: flex;
-}
-
-ul{
-  list-style-type: none;
-}
-main > div {
-  margin-right: 50px;
-}
-
 body{
-  background-color:black;
+  background-color: black;
+  color: white;
+  padding: 10px;
 }
 
-h1{
+h1, h2{
   color: yellow;
-  font-size: 3em;
-  font-family: "Times New Roman", Times, serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobilenav{
+  display: none;
+}
+
+.mobilenav ul{
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.mobilenav li{
+  margin: 5px;
+  background-color: red;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.mobilenav a, .mobilenav a:active, .mobilenav a:visited{
+  color: yellow;
+}
+
+.mobilenav a:hover{
+  font-style: italic;
+}
+
+
+
+nav{
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 50em){
+  .mobile{
+    display: flex;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+
+  .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobilenav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobilenav ul{
+    justify-content: center;
+  }
 }
