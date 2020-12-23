@@ -24,7 +24,7 @@ h1{
 
 h2{
   font-family: 'Arial', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: left;
 }
 
@@ -171,6 +171,20 @@ img{
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@keyframes shake2{
+  0% { transform: translate(1px, 1px) rotate(20deg); }
+  10% { transform: translate(-1px, -2px) rotate(19deg); }
+  20% { transform: translate(-3px, 0px) rotate(21deg); }
+  30% { transform: translate(3px, 2px) rotate(20deg); }
+  40% { transform: translate(1px, -1px) rotate(21deg); }
+  50% { transform: translate(-1px, 2px) rotate(19deg); }
+  60% { transform: translate(-3px, 1px) rotate(20deg); }
+  70% { transform: translate(3px, 1px) rotate(19deg); }
+  80% { transform: translate(-1px, -1px) rotate(21deg); }
+  90% { transform: translate(1px, 2px) rotate(20deg); }
+  100% { transform: translate(1px, -2px) rotate(19deg); }
+}
+
 
 
 footer {
@@ -215,9 +229,24 @@ hr{
     /* When the animation is finished, start again */
     animation-iteration-count: infinite;
   }
+
+  #passion:hover{
+    animation: shake2 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  #rosary:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
 }
 
 @media only screen and (max-width: 50em){
+
+  .pic{
+    margin-right: 40px;
+  }
+
   #passion{
     margin-top: 20px;
     width: 100px;
@@ -235,9 +264,10 @@ hr{
   .outer{
     flex-direction: column;
   }
-  
+
   .collection{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
   }
 }
