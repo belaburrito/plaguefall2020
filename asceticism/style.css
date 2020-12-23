@@ -22,6 +22,12 @@ h1{
   font-size: 3em;
 }
 
+h2{
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+  text-align: left;
+}
+
 p{
   font-family: 'Playfair Display', serif;
 }
@@ -30,22 +36,87 @@ img{
   display: block;
 }
 
+.hideparchment{
+  display: none;
+}
+
+.pill{
+  display:none;
+}
+
+.rx{
+  z-index: -1;
+  display: flex;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.poem{
+  display:none;
+}
+
+.showpoem{
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  text-align: center;
+  width: 30%;
+  height: 30%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 0px;
+  transform: rotate(-3deg);
+}
+
+.showpoem > p{
+  font-family: 'Arial', sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.showpoem::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.showpoem::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.showpoem::-webkit-scrollbar-thumb {
+  background-color: orange;
+  outline: 1px solid slategrey;
+}
+
+.hidetxt{
+  display:none;
+}
+
 .flexbox{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.outer{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#button{
+  align-self: center;
+}
+
 .pic{
   position: relative;
-  left: 15%;
+  left: 20%;
 }
 
 .container{
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: -40px;
+  margin-top: -20px;
 }
 
 .container img{
@@ -68,6 +139,24 @@ img{
 .txt > p{
   line-height: 1.5em;
 }
+
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
 
 footer {
   margin-bottom: 30px;
@@ -101,4 +190,14 @@ hr{
 .txt::-webkit-scrollbar-thumb {
   background-color: #ad8539;
   outline: 1px solid slategrey;
+}
+
+@media only screen and (min-width: 50em){
+  #button img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
 }
