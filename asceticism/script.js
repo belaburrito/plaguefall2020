@@ -4,3 +4,11 @@ $("#button").click(function(){
   $(".txt").toggleClass("hidetxt");
   $(".poem").toggleClass("showpoem");
 });
+/*
+$("#wrong").click(function(){
+  $(".parchment").toggleClass("hideparchment");
+
+  $(".txt").toggleClass("hidetxt");
+  $(".oops").toggleClass("showoops");
+});
+*/

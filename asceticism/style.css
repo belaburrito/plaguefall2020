@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 
 *{
   padding: 0
@@ -19,7 +20,7 @@ body{
 }
 
 h1{
-  font-family: 'Catharsis', sans-serif;
+  font-family: 'Catharsis', 'Marcellus SC', serif;
   font-size: 3em;
 }
 
@@ -31,6 +32,19 @@ h2{
 
 p{
   font-family: 'Playfair Display', serif;
+}
+
+.oops{
+  display:none;
+}
+
+.showoops{
+  display: flex;
+  width: 800px;
+  height: 400px;
+  background-color: brown;
+  align-items: center;
+  text-align: center;
 }
 
 .hideparchment{
@@ -65,6 +79,8 @@ p{
   overflow-x: hidden;
   padding-right: 0px;
   transform: rotate(-3deg);
+  scrollbar-color: orange lightgrey;
+  scrollbar-width: thin;
 }
 
 .showpoem > p{
@@ -150,6 +166,8 @@ p{
   overflow-y: scroll;
   overflow-x: hidden;
   padding-right: 10px;
+  scrollbar-color: #ad8539 lightgrey;
+  scrollbar-width: thin;
 
 }
 
