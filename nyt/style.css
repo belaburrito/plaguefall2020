@@ -323,6 +323,26 @@ li{
   border-bottom: 1px solid lightgrey;
 }
 
+#filler{
+  width: 100px;
+}
+
+@media only screen and (max-width: 50em){
+  #filler{
+    display:none;
+  }
+
+  body, .imgwrapperbig{
+    overflow-x: hidden;
+  }
+
+  .imgwrapperbig img{
+    width: 100%;
+  }
+
+
+}
+
 @media only screen and (min-width: 50em){
 
   #content1{
@@ -403,6 +423,8 @@ li{
     grid-template-columns: 1fr 1fr;
 
   }
+
+
 
 
 }
