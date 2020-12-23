@@ -143,7 +143,9 @@ html{
   justify-content: center;
 }
 
-
+h1{
+  word-wrap: break-word;
+}
 
 #page1 h1{
   font-family: 'Russo One', sans-serif;
@@ -377,13 +379,13 @@ footer a:hover{
   width: 60%;
   position: absolute;
   bottom: 10px;
-  right: 50px;
+  right: 5%;
   text-align: right;
 }
 
 #mobilenav{
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   font-size: 1em;
   display: none;
 }
@@ -410,12 +412,12 @@ footer a:hover{
   }
 
   #nav, #nav h1{
-    z-index: 1;
+    z-index: 2;
     writing-mode: horizontal-tb;
     transform:rotate(180deg);
     position: fixed;
     left: 0;
-    top: 0;
+    top: 4%;
     width: 100%;
     text-align: center;
     border-right: none;
