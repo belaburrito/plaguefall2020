@@ -45,9 +45,9 @@ img{
 }
 
 .rx{
+  align-self: center;
   z-index: -1;
   display: flex;
-  margin: auto;
   margin-bottom: 30px;
 }
 
@@ -58,11 +58,12 @@ img{
 .showpoem{
   display: block;
   position: absolute;
-  top: 30%;
-  left: 42%;
+  z-index: 99;
   text-align: center;
   width: 30%;
   height: 30%;
+  top: 30%;
+  left: 42%;
   overflow-y: scroll;
   overflow-x: hidden;
   padding-right: 0px;
@@ -105,6 +106,7 @@ img{
 
 .collection{
   align-self: center;
+  z-index: 1;
 }
 
 #rosary{
@@ -123,7 +125,7 @@ img{
 
 .pic{
   position: relative;
-  left: 20%;
+  left: 23%;
 }
 
 .container{
@@ -131,6 +133,7 @@ img{
   display: flex;
   justify-content: center;
   margin-top: -20px;
+  width: 100%;
 }
 
 .container img{
@@ -244,7 +247,7 @@ hr{
 @media only screen and (max-width: 50em){
 
   .pic{
-    margin-right: 40px;
+    margin-right: 23%;
   }
 
   #passion{
