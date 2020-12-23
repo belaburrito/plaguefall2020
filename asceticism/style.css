@@ -103,8 +103,22 @@ img{
   justify-content: center;
 }
 
-#button{
+.collection{
   align-self: center;
+}
+
+#rosary{
+  margin-bottom: 20px;
+}
+
+#button{
+  position: relative;
+  left: 10%;
+}
+
+#passion{
+  margin-top: 80px;
+  transform: rotate(20deg);
 }
 
 .pic{
@@ -199,5 +213,20 @@ hr{
 
     /* When the animation is finished, start again */
     animation-iteration-count: infinite;
+  }
+}
+
+@media only screen and (max-width: 50em){
+  #passion{
+    margin-top: 20px;
+    width: 100px;
+  }
+
+  #button img{
+    width: 70px;
+  }
+
+  #rosary{
+    width: 100px;
   }
 }
