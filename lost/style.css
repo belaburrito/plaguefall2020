@@ -36,11 +36,18 @@ h1 a:hover{
   font-style: italic;
 }
 
-p{
+h2{
   font-family: 'Typewriter', serif;
-  color: white;
-  background-color: black;
+  color: black;
   font-weight: lighter;
+  transform: rotate(-2deg);
+}
+
+p{
+  font-family: 'Garamond', serif;
+  color: black;
+  font-weight: bold;
+  line-height: 1.2em;
 }
 
 body{
@@ -69,28 +76,28 @@ body{
 #link2{
   position: absolute;
   left: 45%;
-  top: 22%;
+  top: 21%;
   width: 30%;
 }
 
 #link3{
   position: absolute;
   left: 45%;
-  top: 39%;
+  top: 36%;
   width: 30%;
 }
 
 #link4{
   position: absolute;
   left: 45%;
-  top: 54%;
+  top: 50%;
   width: 45%;
 }
 
 #link5{
   position: absolute;
   left: 45%;
-  top: 69%;
+  top: 65%;
   width: 20%;
 }
 
@@ -120,11 +127,131 @@ body{
   width: 100%;
 }
 
+.modal { display: none; }
+.modal--show,
+.modal--hide { display: flex; } /* classes fired by js for animation control */
+
+/* This is on the wrapper for the whole modal */
+.modal--align {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.modal__container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: auto;
+}
+
+.modalhead{
+  position: absolute;
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.modaltxt{
+  position: absolute;
+  top: 37%;
+  left: 13%;
+  width: 75%;
+  margin: auto;
+  max-height: 300px;
+  overflow-y: scroll;
+  scrollbar-color: yellow lightgrey;
+  scrollbar-width: thin;
+}
+
+.modaltxt::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.modaltxt::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.modaltxt::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid slategrey;
+}
+
+.modal__container img{
+  width: 100%;
+}
+
+.modal__close{
+  font-family: 'Typewriter', serif;
+  font-size: 1em;
+  padding: 3px;
+  border: none;
+  color: white;
+  background-color: black;
+  display: block;
+  margin: auto;
+}
+
+.modal__close:hover{
+  font-style: italic;
+}
+
+.modal__close:active{
+  -webkit-box-shadow: inset 0px 0px 5px white;
+     -moz-box-shadow: inset 0px 0px 5px white;
+          box-shadow: inset 0px 0px 5px white;
+   outline: none;
+}
+
+/* The .modal__close class is used in js but is modified '--x' here */
+.modal__close--x {
+  font-size: 30px; /* this is only because we use unicode for the X in this case */
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+
+/* As there is no href to avoid the hash being added to the URL when clicked we add a pointer */
+/* This 'x' is hidden from screen readers as there is an accessible close button in the modal */
+.modal__close--x:hover {
+  cursor: pointer;
+}
+
+/* Animations */
+/* Open */
+.modal.modal--show {
+  animation: modal-open 0.3s;
+}
+
+@keyframes modal-open {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+/* Close */
+.modal.modal--hide {
+  animation: modal-close 0.3s;
+}
+
+@keyframes modal-close {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+
 @media only screen and (max-width: 50em){
   .container{
     flex-direction: column;
     background-repeat: repeat;
-    padding-bottom: 40%;
+    padding-bottom: 20vh;
   }
 
   header{
@@ -133,12 +260,12 @@ body{
   }
 
   #cia{
-    width: 60%;
+    width: 80%;
   }
 
   .txt{
     margin-left: 0;
-    width: 90%;
+    width: 100%;
     transform: rotate(90deg);
   }
 }
