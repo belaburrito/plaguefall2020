@@ -48,6 +48,7 @@ p{
   font-family: 'Garamond', serif;
   color: black;
   font-weight: bold;
+  font-size: 1.2em;
   line-height: 1.2em;
 }
 
@@ -173,34 +174,26 @@ footer a:hover{
 }
 
 .modal__container {
-  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 600px;
   height: 80%;
   padding: 20px;
-  background-color: white;
+  background-image: url('scanbg.png');
+  background-size: 100% 100%;
   margin: auto;
+  align-items: center;
 }
 
 .modalhead{
-  position: absolute;
-  top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 20%;
 }
 
 .modaltxt{
-  position: absolute;
-  top: 37%;
-  left: 13%;
   width: 75%;
-  margin: auto;
-  max-height: 40%;
   overflow-y: scroll;
   scrollbar-color: yellow lightgrey;
   scrollbar-width: thin;
@@ -227,11 +220,11 @@ footer a:hover{
   font-family: 'Typewriter', serif;
   font-size: 1em;
   padding: 3px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   border: none;
   color: white;
   background-color: black;
-  display: block;
-  margin: auto;
 }
 
 .modal__close:hover{
