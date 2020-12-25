@@ -1,45 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@font-face {
+  font-family: "Typewriter";
+  src: url("Moms-Typewriter.ttf");
+}
 *{
   margin:0;
   padding:0;
 }
 
-body{
-  height: 100vh;
-  background-color: white;
+header{
+  padding-top: 5px;
+  padding-left: 5px;
+  height: 12%;
+  background-color: black;
 }
 
 h1{
-  display: inline;
+  font-family: 'Typewriter', serif;
+  color: white;
+  font-weight: 200;
 }
-h2{
+
+p{
+  font-family: 'Typewriter', serif;
+  color: white;
   background-color: black;
-  width: 200px;
-  display: inline;
+  font-weight: lighter;
+}
+
+body{
+  background-image: url('magenta.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.txt{
+  margin-left: -10%;
+  width: 60%;
+  position: relative;
+}
+
+.txt img{
+  width: 100%;
+}
+
+#link1{
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  width: 20%;
+}
+
+#link2{
+  position: absolute;
+  left: 45%;
+  top: 22%;
+  width: 30%;
+}
+
+#link3{
+  position: absolute;
+  left: 45%;
+  top: 39%;
+  width: 30%;
+}
+
+#link4{
+  position: absolute;
+  left: 45%;
+  top: 54%;
+  width: 45%;
+}
+
+#link5{
+  position: absolute;
+  left: 45%;
+  top: 69%;
+  width: 20%;
+}
+
+#lines{
+  z-index: -1;
+  margin-left: -10%;
+}
+
+#lines img{
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 
-
-body:after{
-  animation: grain 8s steps(10) infinite;
-  background-image: url('paper_1.png');
-  content: "";
-  height: 300%;
-  left: -50%;
-  opacity: 0.3;
-  position: fixed;
-  top: -100%;
-  width: 300%;
+#cia{
+  width: 40%;
+  z-index: 1;
 }
 
-@keyframes grain {
-  0%, 100% { transform:translate(0, 0) }
-  10% { transform:translate(-5%, -10%) }
-  20% { transform:translate(-15%, 5%) }
-  30% { transform:translate(7%, -25%) }
-  40% { transform:translate(-5%, 25%) }
-  50% { transform:translate(-15%, 10%) }
-  60% { transform:translate(15%, 0%) }
-  70% { transform:translate(0%, 15%) }
-  80% { transform:translate(3%, 35%) }
-  90% { transform:translate(-10%, 10%) }
+#cia img{
+  width: 100%;
+}
 }

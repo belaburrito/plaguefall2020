@@ -12,6 +12,10 @@
       url('Catharsis.woff') format('woff');
 }
 
+a, a:active, a:visited{
+  color: brown;
+}
+
 body{
   background-image: url('concrete.png');
   background-size: cover;
