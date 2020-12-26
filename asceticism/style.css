@@ -19,7 +19,7 @@ a, a:active, a:visited{
 body{
   background-image: url('concrete.png');
   background-size: cover;
-  background-color: white;
+  background-color: #FEAC1B;
   font-family: "Helvetica", sans-serif;
 }
 
