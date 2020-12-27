@@ -273,7 +273,7 @@ footer a:hover{
   100%  { opacity: 0; }
 }
 
-@media only screen and (max-width: 50em){
+@media only screen and (max-width: 70em){
   .container{
     flex-direction: column;
     padding-bottom: 5px;
