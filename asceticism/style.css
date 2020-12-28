@@ -34,8 +34,30 @@ h2{
   text-align: left;
 }
 
-p{
+p, ul{
   font-family: 'Playfair Display', serif;
+}
+
+ul{
+  text-align: left;
+}
+
+li{
+  padding-bottom: 5px;
+}
+
+li:first-of-type{
+  font-weight: bold;
+  list-style-type: none;
+}
+
+li:nth-child(n+2){
+  list-style-position: inside;
+}
+
+li span{
+  position: relative;
+  left: -10px;
 }
 
 .oops{
