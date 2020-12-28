@@ -260,7 +260,7 @@ hr{
 }
 
 #page4{
-  height: auto;
+  height: 100vh;
   background-color: black;
   background-size: auto;
   color: white;
@@ -274,7 +274,7 @@ hr{
 
 #page4wrapper{
   width: 50%;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -286,6 +286,57 @@ hr{
 #page4wrapper img{
   width: 80%;
   height: auto;
+}
+
+#page5{
+  background-color: red;
+  color: white;
+  height: 100vh;
+}
+
+#page5wrapper{
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 100px;
+}
+
+ul{
+  margin-bottom: 10px;
+}
+
+li:first-of-type{
+  list-style-type: none;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 1.5em;
+  word-wrap: break-word;
+}
+
+li:nth-child(n+2){
+  list-style-position: inside;
+  text-indent: 2em;
+}
+
+#faqwrapper{
+  font-size: 6em;
+  line-height: 1.8em;
+  position: absolute;
+  text-align: right;
+  height: 100vh;
+  background-color: red;
+  right: 0px;
+  overflow: hidden;
+}
+
+#faq1{
+  margin-top: -60px;
+}
+
+#faqwrapper h1:nth-child(2n){
+  color: #6e0d0f;
 }
 
 #nav{
@@ -362,12 +413,11 @@ footer, footer a{
   font-family: Helvetica, sans-serif;
   font-weight: lighter;
   letter-spacing: 2px;
-  padding-bottom: 10px;
-
+  padding: 20px;
+  background-color: black;
 }
 
 footer a:hover{
-  color: red;
   text-decoration: line-through;
 }
 
