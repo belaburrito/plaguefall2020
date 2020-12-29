@@ -4,7 +4,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav").style.top = "0";
   } else {
-    document.getElementById("nav").style.top = "-100px";
+    document.getElementById("nav").style.top = "-120px";
   }
   prevScrollpos = currentScrollPos;
 }
@@ -20,6 +20,7 @@ nav.addEventListener("mouseover", function( event ) {
 
 }, false);
 
-thingy.addEventListener("mouseout", function( event ) {
-  document.getElementById("nav").style.top = "-100px";
+
+nav.addEventListener("mouseleave", function( event ) {
+  document.getElementById("nav").style.top = "-120px";
 }, false);
