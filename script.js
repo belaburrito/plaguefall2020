@@ -12,6 +12,7 @@ var source = document.createElement('source');
 
 if(randomVid==1){
   source.setAttribute('src', 'birds.mov');
+  source.setAttribute('type', 'video/mp4');
 
   video.appendChild(source);
   video.play();
@@ -19,6 +20,7 @@ if(randomVid==1){
 
 if(randomVid==2){
   source.setAttribute('src', 'kafka.mov');
+  source.setAttribute('type', 'video/mp4');
 
   video.appendChild(source);
   video.play();
@@ -26,7 +28,8 @@ if(randomVid==2){
 
 if(randomVid==3){
   source.setAttribute('src', 'eye.mov');
-
+  source.setAttribute('type', 'video/mp4');
+  
   video.appendChild(source);
   video.play();
 }

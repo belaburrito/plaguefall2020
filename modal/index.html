@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+  _   _                  _
+ | |_| |__   ___   _ __ | | __ _  __ _ _   _  ___
+ | __| '_ \ / _ \ | '_ \| |/ _` |/ _` | | | |/ _ \
+ | |_| | | |  __/ | |_) | | (_| | (_| | |_| |  __/
+  \__|_| |_|\___| | .__/|_|\__,_|\__, |\__,_|\___|
+                  |_|            |___/
+
+Webpage built and maintained by Doron Rasis (c) 2019
+feel free to copy/modify/use!
+send feedback to plague dot magazine at gmail dot com
+-->
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="comedy, nyu, humor magazine, bad photoshop, 1970s, student media, new york city">
+    <meta name="description" content="NYU's only intentionally funny publication.">
+
+    <title>The Plague Magazine</title>
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icons.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./icons.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icons.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons.ico/favicon-16x16.png">
+    <link rel="manifest" href="./icons.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icons.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54486368-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    <!-- P5 library and slime animation -->
+    <script src="./p5.min.js"></script>
+    <script src="./sketch.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="modal.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:400,900" rel="stylesheet">
+
+
+    <!-- twitter card info -->
+    <meta name="twitter:title" content="The Plague">
+    <meta name="twitter:description" content="NYU's only intentionally funny publication.">
+    <meta name="twitter:image" content="./meta_image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- facebook open graph -->
+    <meta property="og:title" content="The Plague">
+    <meta property="og:description" content="NYU's only intentionally funny publication.">
+    <meta property="og:image" content="./meta_image.jpg">
+    <meta property="og:url" content="http://www.plaguemag.com/">
+  </head>
+
+  <body>
+    <div id="slime"></div>
+    <div id="content">
+
+      <div class="logo"><a href="index.html"><img src="./plague_slime_w.png" alt="plague logo"></a></div><br>
+
+      <div id="menu">
+        <ul class="listy">
+          <li><span class="menuitem" id="issues">ISSUES</span></li>
+          <li><span class="menuitem" id="about">ABOUT</span></li>
+          <li><span class="menuitem" id="faq">FAQ</span></li>
+          <li><a href="mailto:plague.magazine@gmail.com?Subject=Hi%20there%21" target="_top"><span class="menuitem">EMAIL US</span></a></li>
+        </ul>
+      </div>
+
+      <div id="about_text">
+        <a href="index.html"><span id="home" class="menuitem">RETURN HOME</span></a>
+
+        <p>Welcome to the website of The Plague, NYU’s only intentionally funny publication. Here you can learn more about our magazine, view all of our past issues, and most importantly, find the inspiration to finally write up that courageous and surely hilarious piece about Daniel Day-Lewis going on Power 105.1’s The Breakfast Club with Charlamagne da God, DJ Envy, and Angela Yee that you’ve always needed to share with the world.</p>
+
+        <p>Anyone and everyone is welcome to join or submit to The Plague, even Tauruses. If you’d like to submit to our magazine or say hi, you can email us at plague.magazine@gmail.com. Also, we're looking for opportunities to use some of our funding to help princes in various foreign countries get back to their rightful positions of power—if you know of any, hit us up.</p>
+
+        <p>A bit of history about The Plague: The Plague began in the 14th century in Eurasia where it just simply killed tbh. There wasn’t paper or education back then so the laughs had to be spread by word of mouth and rats. Approximately 75-200 million people shared in the joy of comedy as The Plague became a worldwide sensation. Flashforward a couple hundred years and now you, dear reader, can join our proud tradition.</p>
+
+        <p>If you want to be a part of The Plague’s future, past, or in-between, come to one of our meetings on Wednesdays at 6:30 in [stable location TBD after add-drop period]. Pizza will be ordered and probably eaten as well. Get meeting updates emailed to you by shooting us an email at plague.magazine@gmail.com.</p>
+
+        <p>In the meantime, you can connect with us on Twitter (@plaguemag), Instagram (@plaguemagazine), and Facebook (plaguemag) where our pay-to-play interns post updates and content so The Plague can once again emerge as an unstoppable global power.</p>
+
+
+        <div class="btm"></div>
+      </div>
+
+      <div id="faq_text">
+        <a href="index.html"><span id="home2" class="menuitem">RETURN HOME</span></a>
+
+        <br>
+        <div class ="q">What is The Plague?</div>
+        <div class ="a">The Plague is NYU's only intentionally funny publication. The Plague has been in print since 1977, and is currently being published once per semester as a glossy, sexy, full-color, 80-page magazine.</div>
+
+        <div class ="q">Where can I pick up a copy?</div>
+        <div class ="a">7th floor of Kimmel.</div>
+
+        <div class ="q">Can I join?</div>
+        <div class ="a">Sure! Shoot us an email to be added to an exclusive mailing list for meeting times and locations.</div>
+
+        <div class ="q">What kind of work do you publish?</div>
+        <div class ="a">Great work.</div>
+
+        <div class ="q">How do I submit?</div>
+        <div class ="a">Send written pieces to plague.magazine@gmail.com! We always respond with feedback.</div>
+
+        <div class ="q">How do I submit visual art?</div>
+        <div class ="a">Email your art to plague.magazine@gmail.com. If you're working on a full-page visual gag or fake advertisement here's what you oughta know: the Photoshop document should be 5.25 X 7.25 inches, have a .125 inch bleed, at least a .125 inch margin, and a 350 DPI resolution. If you don't know what that means, just send us the art you've got an we'll grudgingly format it ourselves. If you want a template PSD, email plague.magazine@gmail.com.</div>
+
+        <div class ="q">Can we advertise with you?</div>
+        <div class ="a">Only if they are humorous advertisements (e.g. Flo from Progressive, GEICO ads, or those two guys just shootin' the shit in the Sonic drive thru, boy they're kooky!) </div>
+
+        <div class="btm"></div>
+      </div>
+
+      <!-- Popup Modal for Fall 2020 website -->
+
+      <div class="flex align-center align-vert modal modal--align">
+  <div class="modal__container">
+
+      <a class="modal__close modal__close--x" aria-hidden="true"><span>&#x2715;</span></a>
+
+      <div class="modalhead"><h1 class="modalstyle">Plague Magazine: Conspiracy Edition<h1><h2 class="modalstyle">Fall 2020</h2>
+      </div>
+
+      <div class="modaltxt">
+        <video autoplay loop autobuffer muted playsinline>
+          <!-- Animation by Camilla Johnson -->
+          <source src="brain.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="modalstyle">EXTRA EXTRA, READ ALL ABOUT IT! Our digital fall edition is nigh. Are you ready to learn the truth? Sign up for email notifications when the official Fall 2020 website is released.</p>
+
+        <div id="form">
+          <form
+            action="https://formspree.io/f/mnqogjqp"
+            method="POST"
+          >
+            <input type="email" name="emailnotify">
+            <input type="submit" value="Send">
+          </form>
+        </div>
+      </div>
+
+    <button class="modal__close"><p class="modalstyle">Close</p></button>
+    </div>
+
+      </div>
+
+    <!---  <div id="email_signup">
+
+        <span id="home3" class="menuitem">RETURN HOME</span><br>
+
+        <form action="http://lists.nyu.edu/subscribe/subscribe.tml" method="POST">
+          <input type="text" name="name" placeholder="NAME" required><br>
+          <input type="email" name="email" placeholder="EMAIL" required><br>
+          <button type="submit">JOIN</button>
+          <input type="hidden" name="list" value="theplague">
+          <input type="hidden" name="confirm" value="none">
+          <input type="hidden" name="showconfirm" value="F">
+          <input type="hidden" name="url" value="http://www.plaguemagazine.com/email_confirm.html">
+          <input type="hidden" name="name_required" value="T">
+        </form>
+
+        <div id="privacy">We respect your privacy, but no promises or anything.</div>
+        <div class="btm"></div>
+      </div>
+-->
+    </div>
+    <script src="interactive.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>

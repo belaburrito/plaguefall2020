@@ -20,6 +20,7 @@ function modal() {
     modal.addEventListener("animationend", afterAnimation, false);
   }
 
+
   // Open the modal
   trigger[0].onclick = function() {
     modal.classList.add('modal--show');

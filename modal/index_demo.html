@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bs/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <title id="title">Plague Magazine</title>
+
+    </head>
+    <body>
+
+      <div class="flex align-center align-vert modal modal--align">
+  <div class="modal__container">
+
+      <a class="modal__close modal__close--x" aria-hidden="true">&#x2715;</a>
+
+      <div class="modalhead"><h1 id="modal">Plague Magazine: Conspiracy Edition<h1><h2 id="modal">Fall 2020</h2>
+      </div>
+
+      <div class="modaltxt">
+        <video autoplay loop autobuffer muted playsinline>
+          <!-- Animation by Camilla Johnson -->
+          <source src="../brain.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p id="modal">EXTRA EXTRA, READ ALL ABOUT IT! Our digital fall edition is nigh. Are you ready to learn the truth? Sign up for email notifications when the official Fall 2020 website is released.</p>
+
+        <div id="form">
+          <form
+            action="https://formspree.io/f/mnqogjqp"
+            method="POST"
+          >
+            <input type="email" name="emailnotify">
+            <input type="submit" value="Send">
+          </form>
+        </div>
+      </div>
+
+    <button class="modal__close"><p>Close</p></button>
+  </div>
+
+      </div>
+
+    </body>
+
+    <script src="script.js"></script>
+</html>

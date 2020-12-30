@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.modalstyle{
+  color: white;
+  font-family: 'VT323', sans-serif;
+}
+
+.modal { display: none; }
+.modal--show,
+.modal--hide { display: flex; } /* classes fired by js for animation control */
+
+/* This is on the wrapper for the whole modal */
+.modal--align {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  max-height: 85%;
+  width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  margin: auto;
+  overflow: scroll;
+}
+
+.modalhead{
+  text-align: center;
+}
+
+.modal__container{
+  text-align: center;
+  scrollbar-color: green lightgrey;
+  scrollbar-width: thin;
+}
+
+.modal__container::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.modal__container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.modal__container::-webkit-scrollbar-thumb {
+  background-color: #00ff00;
+  outline: 1px solid slategrey;
+}
+
+.modal__container img{
+  width: 100%;
+}
+
+.modal__close{
+  font-family: 'Typewriter', serif;
+  font-size: 1em;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.modal__close:hover{
+  font-style: italic;
+}
+
+.modal__close:active{
+  -webkit-box-shadow: inset 0px 0px 5px white;
+     -moz-box-shadow: inset 0px 0px 5px white;
+          box-shadow: inset 0px 0px 5px white;
+   outline: none;
+}
+
+/* The .modal__close class is used in js but is modified '--x' here */
+.modal__close--x {
+  font-size: 30px; /* this is only because we use unicode for the X in this case */
+  position: absolute;
+  align-self: flex-end;
+}
+
+.modal__close--x span{
+  display: inline;
+}
+
+/* As there is no href to avoid the hash being added to the URL when clicked we add a pointer */
+/* This 'x' is hidden from screen readers as there is an accessible close button in the modal */
+.modal__close--x:hover {
+  cursor: pointer;
+}
+
+/* Animations */
+/* Open */
+.modal.modal--show {
+  animation: modal-open 1s;
+}
+
+@keyframes modal-open {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+/* Close */
+.modal.modal--hide {
+  animation: modal-close 0.3s;
+}
+
+@keyframes modal-close {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+
+form{
+  padding: 10px;
+}
+
+input[type=email]{
+  font-family: 'VT323', monospace;
+  font-size: 1.2em;
+}
+input[type=submit]{
+  font-family: 'VT323', monospace;
+  font-size: 1.2em;
+  padding: 2px;
+  background-color: #00FF00;
+  color: black;
+}
+
+video{
+  padding: 10px;
+}
+
+@media only screen and (max-width: 70em){
+  video{
+    width: 70%;
+  }
+}
