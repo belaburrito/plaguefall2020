@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Jeopardy";
+  src: url("gyparody_hv.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Korinna";
+    src: url("korinan.ttf") format("truetype");
+}
+
+body{
+  background-color: #0C0BE9;
+  color: #E7B71F;
+  font-family: "Korinna", serif;
+}
+
+#header{
+  padding: 20px;
+}
+
+#form1{
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+form p{
+  font-size: 1.5em;
+  padding-bottom: 5px;
+}
+
+.ans{
+  display: flex;
+  flex-direction: column;
+}
+
+button[type=submit]{
+  font-family: "Korinna", serif;
+  color: #0C0BE9;
+  background-color: #E7B71F;
+  padding: 5px;
+  display: block;
+  margin: auto;
+}
+
+h1, h2, h1 a, h2 a{
+  font-family: "Jeopardy", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 2em;
+}
+
+h1 a:hover, h2 a:hover{
+  text-decoration: none;
+  font-style: normal;
+}
+
+h2{
+  font-size: 10em;
+}
+
+p, nav{
+  font-family: "Korinna", sans-serif;
+  color: #E7B71F;
+}
+
+a, a:active, a:visited{
+  color: #E7B71F;
+}
+
+a:hover{
+  font-style: italic;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.wrapper{
+  position: relative;
+  z-index: -1;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+}
+
+span{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 15%;
+}
+
+#alex{
+  font-size: 0.8em;
+  text-align: center;
+}
+
+nav{
+  width: 40%;
+  text-align: center;
+}
+
+nav a{
+  line-height: 2em;
+}
+
+ul{
+  list-style-type: none;
+}
+
+#back{
+  text-align: center;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+}
+
+footer{
+  font-size: 0.8em;
+  text-align: center;
+  padding: 20px;
+}
+
+img{
+  max-width: 90%;
+}
+
+@media only screen and (max-width: 80em){
+  h2{
+    font-size: 5em;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+  .imgwrapper{
+    width: 60%;
+  }
+
+  .overlay{
+    left: -50px;
+  }
+
+  span{
+    left: 60px;
+  }
+
+  #alex{
+    font-size: 0.7em;
+  }
+
+  .container{
+    width: 90%;
+  }
+
+  footer{
+    z-index: 99;
+  }
+}
