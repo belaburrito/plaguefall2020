@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #62f5fc;
+  color: black;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+p{
+  font-size: 1em;
+  font-weight: lighter;
+
+}
+
+h1{
+  font-size: 5em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+ul{
+  list-style-type: none;
+  font-family: "Archivo Black", sans-serif;
+}
+
+a, a:active, a:visited{
+  color: black;
+}
+
+a:hover{
+  color: white;
+}
+
+#map{
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  width: 55vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3em;
+  background-image: url('dot.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+#map img{
+  width: 90%;
+}
+
+#man{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+#man img{
+  width: 30%;
+  z-index: -1;
+  align-self: center;
+  margin-right: 5%;
+}
+
+#txt{
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 30%;
+  z-index: 1;
+  margin-right: 5%;
+}
+
+#txt p{
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.containermobile{
+  display:none;
+}
+
+.pyramids{
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.pyramids p{
+  width: 45vw;
+  line-height: 1.5em;
+}
+
+.tp{
+  display: flex;
+  justify-content: center;
+}
+
+#bezos{
+  width: 50vw;
+  background-image: url('pyramid.png');
+}
+
+.bicycles{
+  min-height: 100vh;
+  background-color: #62F5FC;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#wallacetxt{
+}
+
+.glee{
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#glee p{
+  width: 50vw;
+}
+
+#club{
+  width: 50vw;
+  background-image: url('club.png');
+}
+
+footer, footer a, footer a:active, footer a:visited{
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+  padding-top: 20px;
+  color: white;
+}
+
+#btn{
+  display: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  border: none;
+  background-color: Transparent;
+  color: white;
+  font-weight: bolder;
+  position: fixed;
+  bottom: -30px;
+  right: 5px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 15px;
+  transition: color 1s;
+}
+
+#btn:hover{
+  color: blue;
+}
+
+p{
+  padding: 10px;
+}
+
+@media only screen and (max-width: 50em){
+
+  .container{
+    display: none;
+  }
+
+  .containermobile{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('man.png');
+    background-size: contain;
+    background-position: center;
+
+  }
+
+  #txtmobile{
+    width: 70%;
+  }
+
+  #mapmobile{
+    margin-top: 20px;
+  }
+
+  #pyramids{
+    font-size: 2em;
+  }
+
+  .tp{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pyramids p{
+    width: 90vw;
+  }
+
+  #bezos{
+    width: 100%;
+    height: 30vh;
+    background-size: contain;
+  }
+
+  #club{
+    width: 100%;
+    height: 30vh;
+    background-size: contain;
+  }
+}
