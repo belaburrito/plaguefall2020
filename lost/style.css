@@ -140,11 +140,11 @@ ul{
   margin-bottom: 20px;
 }
 
-li:first-of-type{
+.qa li:first-of-type{
   font-style: italic;
 }
 
-li:nth-child(n+2){
+.qa li:nth-child(n+2){
   text-indent: 1em;
   list-style-type: circle;
   list-style-position: inside;
