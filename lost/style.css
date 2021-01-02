@@ -25,6 +25,8 @@ h1{
   font-size: 5em;
   font-weight: bolder;
   text-transform: uppercase;
+  word-wrap: break-word;
+  width: 100%;
 }
 
 ul{
@@ -127,6 +129,27 @@ a:hover{
   align-items: center;
 }
 
+.faq{
+  min-height: 100vh;
+  background-color: #62F5FC;
+  color: black;
+}
+
+ul{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li:first-of-type{
+  font-style: italic;
+}
+
+li:nth-child(n+2){
+  text-indent: 1em;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
 #wallacetxt{
 }
 
@@ -167,7 +190,7 @@ footer, footer a, footer a:active, footer a:visited{
   color: white;
   font-weight: bolder;
   position: fixed;
-  bottom: -30px;
+  bottom: 30px;
   right: 5px;
   z-index: 99;
   cursor: pointer;
@@ -211,8 +234,8 @@ p{
     margin-top: 20px;
   }
 
-  #pyramids{
-    font-size: 2em;
+  #pyramids, #wallace, #glee, #mast{
+    font-size: 3em;
   }
 
   .tp{
