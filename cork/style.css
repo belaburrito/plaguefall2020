@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.cork{
+  background-image: url('cork.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 130vh;
+  background-size: contain;
+  background-repeat: repeat;
+  -moz-box-shadow:    inset 0 0 250px #000000;
+  -webkit-box-shadow: inset 0 0 250px #000000;
+  box-shadow:         inset 0 0 250px #000000;
+  position: relative;
+}
+
+.cork > * {
+  width: 70%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+   -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
+}
+
+#btn{
+  display: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  border: none;
+  background-color: Transparent;
+  color: black;
+  font-weight: bolder;
+  position: fixed;
+  bottom: -30px;
+  right: 5px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 15px;
+  transition: color 1s;
+}
+
+
+footer, footer a, footer a:active, footer a:visited{
+  text-align: center;
+  font-size: 0.8em;
+  color: black;
+  z-index: 99;
+}
+
+footer a:hover{
+  color: white;
+}
+
+
+@media only screen and (min-width: 50em){
+
+  footer{
+    display: none;
+  }
+
+  .cork{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  #poster{
+    position: absolute;
+  }
+
+  #merkel{
+    position: absolute;
+    top: 14%;
+    left: 8%;
+    width: 15%;
+    height: auto;
+    transform: rotate(-20deg);
+  }
+
+  #minion{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 15%;
+    height: auto;
+  }
+
+  #pussy{
+    position: absolute;
+    top: 4%;
+    left: 38%;
+    width: 20%;
+    height: auto;
+    transform: rotate(4deg);
+  }
+
+  #lostdog{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 20%;
+    height: auto;
+    transform: rotate(-2deg);
+  }
+
+  #plastic{
+    position: absolute;
+    top: 11%;
+    right: 10%;
+    width: 20%;
+    height: auto;
+    transform: rotate(20deg);
+  }
+
+  #john{
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    width: 20%;
+    height: auto;
+    transform: rotate(5deg);
+  }
+
+  #japan{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 20%;
+    height: auto;
+  }
+
+  #boba{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 20%;
+    height: auto;
+    transform: rotate(10deg);
+  }
+
+  #bidet{
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    width: 17%;
+    height: auto;
+    transform: rotate(-12deg);
+  }
+
+  #leary{
+    position: absolute;
+    bottom: 3%;
+    left: 4%;
+    width: 20%;
+    height: auto;
+    transform: rotate(-10deg);
+  }
+
+  #eggs{
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    width: 14%;
+    height: auto;
+    transform: rotate(12deg);
+  }
+
+  #gecco{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 13%;
+    height: auto;
+    transform: rotate(-5deg);
+  }
+
+  #boobs{
+    position: absolute;
+    bottom: 5%;
+    right: 20%;
+    width: 15%;
+    height: auto;
+  }
+
+  #zorgon{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 15%;
+    height: auto;
+    transform: rotate(-5deg);
+  }
+
+  #shamwow{
+    position: absolute;
+    top: 3%;
+    right: 30%;
+    width: 15%;
+    transform: rotate(-5deg);
+  }
+
+  #jeff{
+    position: absolute;
+    bottom: 3%;
+    right: 38%;
+    width: 20%;
+    transform: rotate(-3deg);
+  }
+
+  #logo{
+    position: absolute;
+    top: 0%;
+    left: 1%;
+    width: 26%;
+    transform: rotate(-8deg);
+  }
+}

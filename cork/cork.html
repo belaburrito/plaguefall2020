@@ -2,25 +2,104 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <title>PLAGUE CONSPIRACY</title>
+    <title>Conspiracy Corkboard</title>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
 
-    body{
-      background-image: url('cork.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    </style>
-
+  	<link rel="shortcut icon" href="/favicon.ico">
+  	<link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
+  	<link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
+  	<link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
+  	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
+  	<link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
+  	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+  	<link rel="apple-touch-icon" href="favicon/favicon-57.png">
+  	<link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
+  	<link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
+  	<link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
+  	<link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
+  	<link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
+  	<link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
+  	<link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
+  	<link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
+  	<meta name="msapplication-TileColor" content="#FFFFFF">
+  	<meta name="msapplication-TileImage" content="favicon/favicon-144.png">
+  	<meta name="msapplication-config" content="favicon/browserconfig.xml">
   </head>
 
   <body>
+    <button id="btn" title="Back to top">^</button>
+    <div class="cork">
 
-    <div style="position:relative"><img id="main-image" src="transp.png" width="100%">
-    <a href="https://www.goop.com" class="rim-hotspot fn-quickview-trigger" style="width:17.7%; height:41.7%; left:73.5%; top:53.8%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
-    <a href="https://www.nyu.edu" class="rim-hotspot fn-quickview-trigger" style="width:21.3%; height:26.2%; left:12.7%; top:12.6%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a></div>
+
+      <div id="logo"><a href="../home/index.html"><img src="logo.png"></a></div>
+
+      <div id="merkel"><a href="merkel.png" target="_blank"><img src="merkel.png"></a></div>
+
+      <div id="minion"><a href="minions.jpg" target="_blank"><img src="minions.jpg"></a></div>
+
+      <div id="pussy"><a href="pussyplanet.jpg" target="_blank"><img src="pussyplanet.jpg"></a></div>
+
+
+
+      <div id="plastic"><a href="plastic.png" target="_blank"><img src="plastic.png"></a></div>
+
+      <div id="japan"><a href="japan.png" target="_blank"><img src="japan.png"></a></div>
+
+      <div id="john"><a href="john.png" target="_blank"><img src="john.png"></a></div>
+
+
+
+      <div id="boba"><a href="boba.png" target="_blank"><img src="boba.png"></a></div>
+
+      <div id="lostdog"><a href="lostdog.jpg" target="_blank"><img src="lostdog.jpg"></a></div>
+
+      <div id="bidet"><a href="bidet.png" target="_blank"><img src="bidet.png"></a></div>
+
+      <div id="leary"><a href="leary.png" target="_blank"><img src="leary.png"></a></div>
+
+      <div id="eggs"><a href="eggs.jpg" target="_blank"><img src="eggs.jpg"></a></div>
+
+      <div id="gecco"><a href="gecco.jpg" target="_blank"><img src="gecco.jpg"></a></div>
+
+      <div id="boobs"><a href="boobs.png" target="_blank"><img src="boobs.png"></a></div>
+
+      <div id="zorgon"><a href="zorgon.png" target="_blank"><img src="zorgon.png"></a></div>
+
+      <div id="shamwow"><a href="shamwow.png" target="_blank"><img src="shamwow.png"></a></div>
+
+      <div id="jeff"><a href="jeff.png" target="_blank"><img src="jeff.png"></a></div>
+
+
+
+      <footer><a href="http://plaguemag.com/">Plague Magazine</a></footer>
+    </div>
+
+
+
   </body>
+
+  <script>
+  let btn = document.getElementById("btn");
+
+  //button changes display when window is scrolled 20px from top of odcument
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+      btn.style.display = "block";
+    } else{
+      btn.style.display = "none";
+    }
+  }
+
+  //scrolls to top
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  btn.addEventListener('click', topFunction);
+  </script>
 
 </html>
