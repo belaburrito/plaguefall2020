@@ -135,6 +135,10 @@ a:hover{
   color: black;
 }
 
+#faqtext{
+  padding-bottom: 10px;
+}
+
 ul{
   margin-left: 20px;
   margin-bottom: 20px;
@@ -179,6 +183,7 @@ footer, footer a, footer a:active, footer a:visited{
   font-size: 0.8em;
   padding-top: 20px;
   color: white;
+  background-color: #62F5FC;
 }
 
 #btn{
