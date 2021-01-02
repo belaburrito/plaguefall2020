@@ -135,16 +135,20 @@ a:hover{
   color: black;
 }
 
+#faqtext{
+  padding-bottom: 10px;
+}
+
 ul{
   margin-left: 20px;
   margin-bottom: 20px;
 }
 
-li:first-of-type{
+.qa li:first-of-type{
   font-style: italic;
 }
 
-li:nth-child(n+2){
+.qa li:nth-child(n+2){
   text-indent: 1em;
   list-style-type: circle;
   list-style-position: inside;
@@ -179,6 +183,7 @@ footer, footer a, footer a:active, footer a:visited{
   font-size: 0.8em;
   padding-top: 20px;
   color: white;
+  background-color: #62F5FC;
 }
 
 #btn{
